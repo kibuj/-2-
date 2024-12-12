@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/loginstyle.css'%}"/>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+  <div class="container">
+  <header>
+    <h1></h1>
+  </header>
+  <hr>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <hr>
+  </div>
+</body>
+</html>

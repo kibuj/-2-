@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/homestyle.css">
+</head>
+<body>
+<header class="header ">
+    <nav>
+        <div class="flex flex-align-center flex-justify-content-around">
+            <div class="">
+                <div class=""><img class="img" src="../../static/img/logo.svg" alt=""></div>
+            </div>
+            <div>
+                
+            </div>
+            
+            <div class="flex flex-align-center">
+                <div class="">
+                    <a href="{% url 'view_cart' %}" class="trash-button">
+                        <img class="img-trash" src="../../static/img/drugstore.png" alt=""></a>                                                                              
+                </div>
+                <div class="btn-box">
+                    <a href="/profile" class="header__btn">profile</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="box-link flex flex-align-center flex-justify-content-center">
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/house.png"></div>
+        <div class=""><a href="/">Весь Каталог</a></div>
+    </div>
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/a.png"></div>
+        <div class=""><a href="/homeA">Вітамін А</a></div>
+    </div>
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/b.png"></div>
+        <div class=""><a href="/homeB">Вітамін B</a></div>
+    </div>
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/c.png"></div>
+        <div class=""><a href="/homeC">Вітамін C</a></div>
+    </div>
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/d.png"></div>
+        <div class=""><a href="/homeD">Вітамін D</a></div>
+    </div>
+</div>
+<main class="main flex flex-justify-content-center">
+    <div class="parent flex flex-justify-content-around">
+        
+        <div class="div1 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Синус Хот порошок для орального розчину зі смаком суниці</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/9.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/9/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div2 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>ВітІмун капсули,</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/10.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/10/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>  
+            </div>
+        </div>
+        <div class="div3 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Вітамін С+Цинк, таблетки жувальні зі смаком апельсину</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/11.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/11/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div4 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Аскорвіта Макс таблетки</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/12.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/12/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</main>
+</body>
+</html>

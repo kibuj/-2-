@@ -1,0 +1,27 @@
+{% extends 'sign/base-for-sign.html' %}
+
+{% block content %}
+  <div id="login-form-wrap">  
+  <h2>Sign up</h2>
+  <form id="login-form" method="post">
+    {% csrf_token %}
+    <p>
+      <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+      <input type="email" id="email" name="email" placeholder="Email" required><i class="validation"><span></span><span></span></i>
+    </p>  
+    <p>
+      <input type="password" id="password1" name="password1" placeholder="Password" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+      <input type="password" id="password2" name="password2" placeholder="Password verification" required><i class="validation"><span></span><span></span></i>
+    </p>  
+    <p>    
+      <input type="submit" id="login" value="Register">
+    </p>
+  </form>
+<div id="create-account-wrap">
+   </div>
+</div> 
+{% endblock %}

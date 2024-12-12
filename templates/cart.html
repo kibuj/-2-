@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../static/css/cart.css">
+    
+</head>
+<body>
+    <div class="cart">
+        <h1>Your Cart</h1>
+            <ul>
+                {% for order_product in order_products %}
+                    <li>{{ order_product.product.name }} - Quantity: {{ order_product.quantity }}</li>
+                {% endfor %}
+            </ul>
+
+    <a href="/" class="button-1" role="button" >Return</a>
+    </div>
+    
+</body>
+</html>

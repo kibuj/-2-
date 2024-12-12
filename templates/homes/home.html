@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/homestyle.css">
+</head>
+<body>
+<header class="header ">
+    <nav>
+        <div class="flex flex-align-center flex-justify-content-around">
+            <div class="">
+                <div class=""><img class="img" src="../../static/img/logo.svg" alt=""></div>
+            </div>
+            <div>
+                
+            </div>
+            
+            <div class="flex flex-align-center">
+                <div class="">
+                    <a href="{% url 'view_cart' %}" class="trash-button">
+                        <img class="img-trash" src="../../static/img/drugstore.png" alt=""></a>                                                                              
+                </div>
+                <div class="btn-box">
+                    <a href="/profile" class="header__btn">profile</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="box-link flex flex-align-center flex-justify-content-center">
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/house.png"></div>
+        <div class=""><a href="/">Весь Каталог</a></div>
+    </div>
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/a.png"></div>
+        <div class=""><a href="/homeA">Вітамін А</a></div>
+    </div>
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/b.png"></div>
+        <div class=""><a href="/homeB">Вітамін B</a></div>
+    </div>
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/c.png"></div>
+        <div class=""><a href="/homeC">Вітамін C</a></div>
+    </div>
+    <div class="flex flex-align-center xxx">
+        <div class=""><img class="img-link" src="../../static/img/d.png"></div>
+        <div class=""><a href="/homeD">Вітамін D</a></div>
+    </div>
+</div>
+<main class="main flex flex-justify-content-center">
+    <div class="parent flex flex-justify-content-around">
+        <div class="div1 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Вітамін А капсули м'як. по 100000</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/1.jpg" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/1/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>
+            </div>
+        </div>
+        <div class="div2 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>НатХелс (NatHealth) Мультивітаміни стійкий імунітет драже для дітей</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/2.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/2/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div3 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Нав (NOW) Вітамін А 10000 МО у м'яких капсулах</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/3.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/3/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div4 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>АЕвіт Преміум капсули</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/4.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/4/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div5 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Магнебам В6 таблетки</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/5.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/5/" method="post">
+                    {% csrf_token %}
+                <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div6 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Магнікум-Антистрес таблетки</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/6.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/6/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div7 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Магнікум таблетки при дефіциті магнію</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/7.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/7/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div8 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Магнебам Антистрес, 30 шт</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/8.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/8/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div9 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Синус Хот порошок для орального розчину зі смаком суниці</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/9.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/9/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div10 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>ВітІмун капсули,</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/10.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/10/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>  
+            </div>
+        </div>
+        <div class="div11 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Вітамін С+Цинк, таблетки жувальні зі смаком апельсину</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/11.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/11/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>    
+            </div>
+        </div>
+        <div class="div12 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Аскорвіта Макс таблетки</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/12.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/12/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>
+            </div>
+        </div>
+        <div class="div13 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Олідетрим 2000 МО</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/13.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/13/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>
+            </div>
+        </div>
+        <div class="div14 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>ВітІмун капсули,</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/14.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/14/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>
+            </div>
+        </div>
+        <div class="div15 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Декрістол Д3 таблетки 4000 МО</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/15.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/15/" method="post">
+                    {% csrf_token %}
+                    <button class="header__btn-input">В Корзину</button>
+                </form>
+            </div>
+        </div>
+        <div class="div16 flex flex-align-center flex-justify-content-center flex-column">
+            <div class=""><h4>Вітамін D3 ультракап</h4></div>
+            <div class=""><img class="img" src="../../static/img/vits/16.webp" alt=""></div>
+            <div class="">
+                <form action="/add_to_cart/16/" method="post">
+                    {% csrf_token %}
+                <button class="header__btn-input">В Корзину</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
